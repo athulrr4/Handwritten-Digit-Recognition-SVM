@@ -1,25 +1,26 @@
-#  Handwritten Digit Recognition using SVM
+# Handwritten Digit Recognition using SVM
 
 ## 📌 Project Overview
 
-This project focuses on recognizing handwritten digits (0–9) using a Machine Learning classification algorithm called **Support Vector Machine (SVM)**.
+This project demonstrates handwritten digit recognition using **Support Vector Machine (SVM)**, a supervised machine learning algorithm.
 
-The model takes an 8×8 image of a handwritten digit and predicts which digit it represents.
+The objective is to classify handwritten digits from 0 to 9 using image pixel data. The project is implemented in Python using the Scikit-learn library.
 
-## 🎯 Objectives
+This notebook was provided as part of a learning assignment/coursework.
 
-- Understand how images are represented as numerical pixel values.
-- Load and explore handwritten digit data.
-- Visualize handwritten digit images using Matplotlib.
-- Train a Support Vector Machine classifier.
-- Evaluate model accuracy using a test dataset.
-- Compare different SVM kernel and parameter settings.
+## 🎯 Project Objectives
+
+- Understand the basics of handwritten digit classification.
+- Explore image data represented as numerical pixel values.
+- Apply the Support Vector Machine (SVM) algorithm.
+- Train and test a machine learning classification model.
+- Compare model performance using different SVM configurations.
 
 ## 🛠️ Technologies Used
 
 - Python
-- Pandas
 - NumPy
+- Pandas
 - Matplotlib
 - Scikit-learn
 - Jupyter Notebook
@@ -29,79 +30,55 @@ The model takes an 8×8 image of a handwritten digit and predicts which digit it
 ```text
 Handwritten-Digit-Recognition-SVM/
 │
-├── data/
-│   └── digits.csv
-│
 ├── 02_handwritten_digit_recognition_svm.ipynb
-├── requirements.txt
-├── README.md
-└── .gitignore
+└── README.md
 ```
 
-## 📊 Dataset
+## 🤖 Algorithm Used
 
-The dataset contains **1,797 handwritten digit images**.
+**Support Vector Machine (SVM)**
 
-Each image is represented by 64 pixel values arranged as an 8×8 grid.
+SVM is a supervised machine learning algorithm used for classification. It identifies decision boundaries that help distinguish between different digit classes.
 
-- `pixel_0` to `pixel_63`: Pixel brightness values.
-- `label`: Actual handwritten digit (0–9).
+The notebook explores different SVM configurations and compares their classification performance.
 
-## 🤖 Machine Learning Algorithm
+## ▶️ How to Run
 
-This project uses **Support Vector Machine (SVM)** for multi-class classification.
+1. Clone this repository:
 
-Different SVM configurations are compared:
+   ```bash
+   git clone https://github.com/athulrr4/Handwritten-Digit-Recognition-SVM.git
+   ```
 
-- Linear kernel
-- RBF kernel
-- RBF kernel with gamma = 0.001
-- RBF kernel with gamma = 0.001 and C = 0.1
+2. Open the project folder:
 
-The model is evaluated using accuracy on the test dataset.
+   ```bash
+   cd Handwritten-Digit-Recognition-SVM
+   ```
 
-## ⚙️ How to Run the Project
+3. Install the required libraries:
 
-### 1. Clone the repository
+   ```bash
+   pip install numpy pandas matplotlib scikit-learn jupyter
+   ```
 
-```bash
-git clone https://github.com/YOUR-GITHUB-USERNAME/Handwritten-Digit-Recognition-SVM.git
-```
+4. Start Jupyter Notebook:
 
-### 2. Open the project folder
+   ```bash
+   jupyter notebook
+   ```
 
-```bash
-cd Handwritten-Digit-Recognition-SVM
-```
+5. Open the notebook and execute the cells.
 
-### 3. Install dependencies
+**Note:** The notebook may require additional dataset files depending on its data-loading code. Make sure any required dataset is available before running all cells.
 
-```bash
-pip install -r requirements.txt
-```
+## 📚 Learning Outcomes
 
-### 4. Run Jupyter Notebook
-
-```bash
-jupyter notebook
-```
-
-Open `02_handwritten_digit_recognition_svm.ipynb` and run the cells.
-
-## 📈 What I Learned
-
-- How image data is stored as pixel values.
-- How to visualize 8×8 handwritten digit images.
-- How to train and test an SVM classification model.
-- How to compare different model settings.
-- How to evaluate a classification model using accuracy.
-
-## 🚀 Future Improvements
-
-- Display incorrectly predicted digits.
-- Experiment with additional SVM parameters.
-- Improve model performance.
-- Build a simple web application for digit recognition.
+- Understanding image data in machine learning.
+- Introduction to classification algorithms.
+- Practical use of Support Vector Machines.
+- Comparing different model configurations.
+- Understanding model accuracy and performance.
 
 ## 👨‍💻 Author
 
@@ -109,6 +86,7 @@ Open `02_handwritten_digit_recognition_svm.ipynb` and run the cells.
 
 GitHub: [@athulrr4](https://github.com/athulrr4)
 
-## 📄 License
+## 🙏 Acknowledgement
 
-This project is created for educational and learning purposes.
+This project was provided by our instructor as part of the learning coursework. It is shared here for educational and learning purposes.
+
